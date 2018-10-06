@@ -1,8 +1,10 @@
 <?php
 /*
 Plugin Name: ChipBot
+Plugin URI: https://getchipbot.com/product?utm_source=wordpress&utm_medium=plugin-link
 description: ChipBot analyzes your customer's behavior while giving them support and engagement. Fully Automated.
 Author: GetChipBot.com
+Author URI: https://getchipbot.com?utm_source=wordpress&utm_medium=author-link
 Version: 1.0.0
 */
 
