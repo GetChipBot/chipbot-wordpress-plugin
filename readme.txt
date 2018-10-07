@@ -4,7 +4,7 @@ Tags: user, support, user support, faq, faqs, widget, widgets, reporting, help, 
 Requires at least: 4.3.17
 Tested up to: 4.9.8
 Requires PHP: 5.3.0
-Stable tag: trunk
+Stable tag: 1.0.2
 License: https://github.com/GetChipBot/chipbot-wordpress-plugin/blob/master/LICENSE
 License URI: https://github.com/GetChipBot/chipbot-wordpress-plugin/blob/master/LICENSE
 
