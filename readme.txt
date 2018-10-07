@@ -18,6 +18,8 @@ ChipBot helps support your users by providing a floating FAQ widget while analyz
 - Reporting dashboard to monitor your user's behavior.
 - Weekly emails about user behavior reports and recommendations.
 
+= How It Works =
+
 == Installation ==
 1. Upload the chipbot-wordpress-plugin directory into "/wp-content/plugins"  directory., 2 Activate the plugin through the "Plugins" menu in WordPress.
 
@@ -29,7 +31,7 @@ or
 
 = Getting Started =
 1. Go to the ChipBot option in the menu on the left.
-2. Follow the instructions to create an account.
+2. Follow the instructions to create an account on GetChipBot.com.
 3. After the instructions are complete, test ChipBot by visiting your website.
 
 == Frequently Asked Questions ==
