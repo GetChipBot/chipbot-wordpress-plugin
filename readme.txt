@@ -1,5 +1,5 @@
 === ChipBot ===
-Contributors: GetChipBot
+Contributors: GetChipBot.com
 Tags: user, support, user support, faq, faqs, widget, widgets, reporting, help, help desk, helpdesk, questions, question, wordpress faq, FAQ list, FAQ accordion, knowledgebase, kb, answer, answers, FAQ categories, simple FAQ
 Requires at least: 4.3.17
 Tested up to: 4.9.8
