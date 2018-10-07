@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 /*
 Plugin Name: ChipBot
 Plugin URI: https://getchipbot.com/product?utm_source=wordpress&utm_medium=plugin-link
@@ -17,7 +19,8 @@ class ChipBotWordpressPlugin
         add_action('wp_head', array($this, 'script'));
     }
 
-    public function script() {
+    public function script()
+    {
         $aid = get_option('chipbot_account_id');
 
         if (trim($aid) !== '') {

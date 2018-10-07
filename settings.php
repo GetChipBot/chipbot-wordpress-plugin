@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 settings_fields('settings_group');
 $host = rawurlencode($_SERVER['HTTP_HOST']);
 $path = rawurlencode($_SERVER['REQUEST_URI']);
@@ -6,6 +8,7 @@ $link = 'https://getchipbot.com/?utm_source=wordpress&utm_medium=plugin&utm_cont
 $nonce = wp_verify_nonce($_POST['chipbot_settings_form'], 'chipbot_form_update');
 $queries = array();
 parse_str($_SERVER['QUERY_STRING'], $queries);
+$adminPath = get_admin_url() . 'admin.php?page=getchipbot-com&saved=true';
 ?>
 
 <div class="wrap">
@@ -75,10 +78,14 @@ parse_str($_SERVER['QUERY_STRING'], $queries);
       </tbody>
     </table>
 
-    <input type="hidden" name="_wp_http_referer" value="/wp-admin/admin.php?page=getchipbot-com&saved=true">
+    <input
+      type="hidden"
+      name="_wp_http_referer"
+      value="<?php echo $adminPath ?>"
+    >
 
 
-    <?php if ($queries['saved']) { ?>
+      <?php if ($queries['saved']) { ?>
         <div class="notice notice-success" style="padding: 20px;">
           Your Account ID is now saved! Go check your homepage to see Chipbot.
         </div>
@@ -93,7 +100,8 @@ parse_str($_SERVER['QUERY_STRING'], $queries);
 
       <?php wp_nonce_field('chipbot_form_update', 'chipbot_settings_form'); ?>
 
-    <input type="hidden" name="_wp_http_referer" value="/wp-admin/admin.php?page=getchipbot-com&saved=true">
+    <input type="hidden" name="_wp_http_referer"
+      value="<?php echo $adminPath ?>">
 
 
     <div class="chipbot-submit">
