@@ -35,12 +35,13 @@ class ChipBotWordpressPlugin
 
     public function create_plugin_settings_page()
     {
+        $pluginPath = plugins_url('chipbot-wordpress-plugin');
         $page_title = 'ChipBot Settings';
         $menu_title = 'ChipBot';
         $capability = 'manage_options';
         $slug = 'getchipbot-com';
         $callback = array($this, 'plugin_settings_page_content');
-        $icon = 'https://static.getchipbot.com/shared/images/cb-square-logo-dark-rounded-16px.svg';
+        $icon = $pluginPath . '/cb-square-logo-dark-rounded-16px.svg';
         $position = 100;
 
         add_menu_page($page_title, $menu_title, $capability, $slug, $callback, $icon, $position);

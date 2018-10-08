@@ -9,13 +9,14 @@ $nonce = wp_verify_nonce($_POST['chipbot_settings_form'], 'chipbot_form_update')
 $queries = array();
 parse_str($_SERVER['QUERY_STRING'], $queries);
 $adminPath = get_admin_url() . 'admin.php?page=getchipbot-com&saved=true';
+$pluginPath = plugins_url('chipbot-wordpress-plugin');
 ?>
 
 <div class="wrap">
   <div class="postbox" style="padding: 15px;">
     <img
       style="margin-bottom: 10px;"
-      src="https://static.getchipbot.com/shared/images/cb-logo-2.svg"
+      src="<?php echo $pluginPath; ?>/cb-logo-2.svg"
       alt="GetChipBot.com"
     />
 
