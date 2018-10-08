@@ -5,7 +5,7 @@ Requires at least: 4.3.17
 Tested up to: 4.9.8
 Requires PHP: 5.3.0
 Stable tag: 1.0.2
-License: https://github.com/GetChipBot/chipbot-wordpress-plugin/blob/master/LICENSE
+License: GNU General Public License v2.0
 License URI: https://github.com/GetChipBot/chipbot-wordpress-plugin/blob/master/LICENSE
 
 ChipBot helps support your users by providing a floating FAQ widget while analyzing and reporting your user's behavior to you.
