@@ -18,6 +18,9 @@ ChipBot helps support your users by providing a floating FAQ widget while analyz
 - Reporting dashboard to monitor your user's behavior.
 - Weekly emails about user behavior reports and recommendations.
 
+You will need to [sign up for a Account ID](https://getchipbot.com) to use this plugin. It's free
+to use but paid subscriptions are available for unlimited data and reporting.
+
 = How It Works =
 
 == Installation ==
